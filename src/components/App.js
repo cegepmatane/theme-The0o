@@ -10,6 +10,7 @@ export default class App extends Component {
     this.positionJoueur = 0;
     this.changementJoueurAvant = this.changementJoueurAvant.bind(this);
     this.changementJoueurApres = this.changementJoueurApres.bind(this);
+    this.ajouterArgent = this.ajouterArgent.bind(this);
   }
 
   componentDidMount () {
@@ -37,6 +38,12 @@ export default class App extends Component {
     document.getElementById("selectionJoueurTricheNom").innerText = listeJoueur[this.positionJoueur].nom;
   }
 
+  ajouterArgent() {
+    listeJoueur[this.positionJoueur].argent += parseInt(document.getElementById("argentTricheJoueur").value)
+    document.getElementById("argentJoueur" + this.positionJoueur).innerText = listeJoueur[this.positionJoueur].nom + "\n" + listeJoueur[this.positionJoueur].argent;
+    console.log(listeJoueur)
+  }
+
   render() {
     return (
       <section id='contenaire'>
@@ -50,7 +57,7 @@ export default class App extends Component {
               <p onClick={this.changementJoueurApres}><b>+</b></p>
             </div>
             <input id="argentTricheJoueur" />
-            <button id="boutonValiderTriche">Valider</button>
+            <button id="boutonValiderTriche" onClick={this.ajouterArgent}>Valider</button>
           </div>
         </div>
       </section>
