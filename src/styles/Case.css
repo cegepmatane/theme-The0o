@@ -1,0 +1,187 @@
+.propriete {
+    grid-column: auto;
+    grid-row: auto;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 18% 63% 6% 13%;
+}
+
+.impotRevenu {
+    grid-column: auto;
+    grid-row: auto;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 49% 6% 15%;
+}
+
+.depart {
+    display: grid;
+}
+
+.parcGratuit {
+    display: grid;
+}
+
+.allerPrison {
+    display: grid;
+}
+
+.prison {
+    display: grid;
+}
+
+.coteGauche {
+    transform: translate(3.7vh, -3.9vh) rotate(90deg);
+    height: 15vh;
+    width: 7.69vh;   
+}
+
+.coteDroit {
+    transform: translate(3.7vh, -3.9vh) rotate(-90deg);
+    height: 15vh;
+    width: 7.69vh;   
+}
+
+.parcGratuit {
+    grid-column: 1/3;
+    grid-row: auto;
+    border: solid 1px black;
+}
+
+.allerPrison {
+    grid-column: 12/14;
+    grid-row: auto;
+    border: solid 1px black;
+}
+
+.prison {
+    grid-column: 1/3;
+    grid-row: auto;
+    border: solid 1px black;
+}
+
+.depart {
+    grid-column: 12/14;
+    grid-row: auto;
+    border: solid 1px black;
+}
+
+.compagnie {
+    grid-column: auto;
+    grid-row: auto;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 49% 6% 15%;
+}
+
+.image {
+    width: 7vh;
+    margin: auto;
+    grid-row: auto;
+}
+
+.bar {
+    grid-row: auto;
+    border-bottom: solid 2px black;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gare {
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 49% 6% 15%;
+}
+
+.taxeLuxe {
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 59% 6% 15%;
+}
+
+
+.nom_propriete {
+    height: 60%;
+    font-size: 1.5vh;
+    text-align: center;
+    grid-row: auto;
+    margin: auto;
+}
+
+.chance {
+    grid-column: auto;
+    grid-row: auto;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 61% 6%;
+}
+
+.image_chance {
+    width: 6vh;
+    margin: auto;
+    grid-row: auto;
+}
+
+.nom_compagnie {
+    height: 60%;
+    font-size: 1vh;
+    text-align: center;
+    grid-row: auto;
+    margin: auto;
+}
+
+.nom_gare {
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+.nom_chance {
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+.logoImpotRevenu {
+    background-color: black;
+    width: 0.5vh;
+    height: 0.5vh;
+    display: block;
+    margin: auto;
+    transform: rotate(45deg);
+}
+
+.nom_caisse {
+    font-size: 1vh;
+    text-align: center;
+}
+
+.nomImpotRevenu {
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+.gridJoueur {
+    grid-row: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*background-color: green;*/
+}
+
+.prix {
+    font-size: 1vh;
+    text-align: center;
+    grid-row: auto;
+    margin: auto;
+}
+
+.bar img {
+    width: 1vh;
+    display: flex;
+    margin: auto;
+}

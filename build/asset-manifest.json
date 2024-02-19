@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ba5d0379.css",
+    "main.js": "/static/js/main.848f66bc.js",
+    "static/media/caisseCommunaute.png": "/static/media/caisseCommunaute.a48875665207debaf732.png",
+    "static/media/ampoule.png": "/static/media/ampoule.9ad59ca4919a8d0f5e33.png",
+    "static/media/robinet.png": "/static/media/robinet.fefc28851378118b44e9.png",
+    "static/media/chance.png": "/static/media/chance.b3042c91a701904b6896.png",
+    "static/media/gare.png": "/static/media/gare.91e8f458d18a993cc149.png",
+    "static/media/bague.png": "/static/media/bague.31e9ad8d941e2041ad33.png",
+    "static/media/maison.png": "/static/media/maison.f901b5e448f116709d2d.png",
+    "static/media/hotel.png": "/static/media/hotel.b4bc84d0c9dc8944bba3.png",
+    "index.html": "/index.html",
+    "main.ba5d0379.css.map": "/static/css/main.ba5d0379.css.map",
+    "main.848f66bc.js.map": "/static/js/main.848f66bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba5d0379.css",
+    "static/js/main.848f66bc.js"
+  ]
+}

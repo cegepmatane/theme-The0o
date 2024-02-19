@@ -1,0 +1,17 @@
+.pion {
+    width: 1vh;
+    height: 1vh;
+    float: left;
+    grid-column: auto;
+    margin: auto;
+    /*margin: 0 auto;
+    position: relative;
+    bottom: 3.5vh;*/
+}
+
+/*.pion {
+    width: 1vh;
+    height: 1vh;
+    position: static;
+    margin: auto;
+}*/
