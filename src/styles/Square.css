@@ -39,7 +39,8 @@
     height: 20vh;
     width: 21vh;
     margin-left: 10vh;
-    background-color: aqua;
+    position: absolute;
+    bottom: 0;
 }
 
 #selectionJoueur {
@@ -55,9 +56,11 @@
     justify-content: center;
     justify-items: center;
     justify-self: center;
+    background-color: lightgray
 }
 
 #boutonValiderTriche {
     width: 100%;
-    background-color: lightgray
+    background-color: lightgray;
+    border: none;
 }
