@@ -14,6 +14,7 @@ export default class App extends Component {
   }
 
   componentDidMount () {
+    document.getElementById("selectionJoueurTricheNom").innerText = listeJoueur[this.positionJoueur].nom;
     this.launch()
   }
   launch() {
