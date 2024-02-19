@@ -34,3 +34,10 @@
     width: 82%;
     font-size: 1.2vh;
 }
+
+#tricheArgent {
+    height: 20vh;
+    width: 21vh;
+    margin-left: 10vh;
+    background-color: aqua;
+}

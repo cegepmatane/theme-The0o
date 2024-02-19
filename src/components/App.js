@@ -14,7 +14,10 @@ export default class App extends Component {
     return (
     <section id='contenaire'>
       <Square />
-      <div id="argentJoueur"></div>
+      <div id="metadonnees">
+        <div id="argentJoueur"></div>
+        <div id="tricheArgent"></div>
+      </div>
     </section>
     )
   }
