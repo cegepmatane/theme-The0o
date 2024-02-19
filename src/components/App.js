@@ -16,7 +16,15 @@ export default class App extends Component {
       <Square />
       <div id="metadonnees">
         <div id="argentJoueur"></div>
-        <div id="tricheArgent"></div>
+        <div id="tricheArgent">
+          <div id="selectionJoueur">
+            <p><b>-</b></p>
+            <p>Joueur 1</p>
+            <p><b>+</b></p>
+          </div>
+          <input id="argentTricheJoueur" />
+          <button id="boutonValiderTriche">Valider</button>
+        </div>
       </div>
     </section>
     )

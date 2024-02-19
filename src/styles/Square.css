@@ -41,3 +41,23 @@
     margin-left: 10vh;
     background-color: aqua;
 }
+
+#selectionJoueur {
+    display: flex;
+    justify-content: space-around;
+}
+
+#argentTricheJoueur {
+    padding: 0;
+    margin: 0 5%;
+    border: 0;
+    width: 90%;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+#boutonValiderTriche {
+    width: 100%;
+    background-color: lightgray
+}
