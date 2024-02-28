@@ -7,6 +7,16 @@ import maison from '../images/maison.png'
 import hotel from '../images/hotel.png'
 import '../styles/Case.css'
 
+const mysql = require('mysql');
+
+// Connexion à la base de données
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'root',
+  database: 'STATISTIQUE'
+});
+
 export class MainFonction {
     constructor() {
         this.gagnant = false
@@ -1032,6 +1042,31 @@ export class MainFonction {
             document.getElementById("argentJoueur"+this.joueurActuel).style.backgroundColor = "#00000066"
             this.changerJoueur()
         }
+    }
+
+    mettreAJourNombreParties(nomUtilisateur) {
+        connection.query('SELECT * FROM joueurs WHERE nomUtilisateur = ?', [nomUtilisateur], (error, results) => {
+            if (error) {
+            throw error;
+            }
+
+            if (results.length > 0) {
+            const nouvelleValeur = results[0].nombreParties + 1;
+            connection.query('UPDATE joueurs SET nombreParties = ? WHERE nomUtilisateur = ?', [nouvelleValeur, nomUtilisateur], (error, results) => {
+                if (error) {
+                throw error;
+                }
+                console.log(`Nombre de parties mis à jour pour ${nomUtilisateur}`);
+            });
+            } else {
+            connection.query('INSERT INTO joueurs (nomUtilisateur, nombreParties) VALUES (?, ?)', [nomUtilisateur, 1], (error, results) => {
+                if (error) {
+                throw error;
+                }
+                console.log(`Nouvel enregistrement pour ${nomUtilisateur}`);
+            });
+            }
+        });
     }
 /*while (!gagnant) {
 
