@@ -21,6 +21,7 @@ export class MainFonction {
     constructor() {
         this.gagnant = false
         this.joueurActuel = 0
+        mettreAJourNombreParties()
 
         let grid = document.getElementsByClassName("gridJoueur");
         for (let i = 0; i < grid.length; i++) {
@@ -801,6 +802,7 @@ export class MainFonction {
     }
 
     perdu() {
+        mettreAJourResultatsPartie(this.infoJoueur["nom"], false)
         if (arguments.length == 0) {
             this.infoJoueur.enJeu = false;
         }
@@ -1068,6 +1070,35 @@ export class MainFonction {
             }
         });
     }
+
+    mettreAJourResultatsPartie(nomUtilisateur, aGagne) {
+        connection.query('SELECT * FROM joueurs WHERE nomUtilisateur = ?', [nomUtilisateur], (error, results) => {
+            if (error) {
+            throw error;
+            }
+
+            if (results.length > 0) {
+            let partiesGagnees = results[0].partiesGagnees;
+            let partiesPerdues = results[0].partiesPerdues;
+
+            if (aGagne) {
+                partiesGagnees++;
+            } else {
+                partiesPerdues++;
+            }
+
+            connection.query('UPDATE joueurs SET partiesGagnees = ?, partiesPerdues = ? WHERE nomUtilisateur = ?', [partiesGagnees, partiesPerdues, nomUtilisateur], (error, results) => {
+                if (error) {
+                throw error;
+                }
+                console.log(`Résultats de parties mis à jour pour ${nomUtilisateur}`);
+            });
+            } else {
+            console.log(`Aucun enregistrement trouvé pour ${nomUtilisateur}`);
+            }
+        });
+    }
+
 /*while (!gagnant) {
 
 }*/
