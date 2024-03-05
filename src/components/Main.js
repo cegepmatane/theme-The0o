@@ -21,7 +21,7 @@ export class MainFonction {
     constructor() {
         this.gagnant = false
         this.joueurActuel = 0
-        mettreAJourNombreParties()
+        this.mettreAJourNombreParties()
 
         let grid = document.getElementsByClassName("gridJoueur");
         for (let i = 0; i < grid.length; i++) {
@@ -802,7 +802,7 @@ export class MainFonction {
     }
 
     perdu() {
-        mettreAJourResultatsPartie(this.infoJoueur["nom"], false)
+        this.mettreAJourResultatsPartie(this.infoJoueur["nom"], false)
         if (arguments.length == 0) {
             this.infoJoueur.enJeu = false;
         }
