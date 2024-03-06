@@ -42,8 +42,8 @@
       </div>
       <div id="divStatistique">
         <p>Statistiques</p>
-        <input type="text" value="Nom du joueur">
-        <input type="button" value="Rechercher">
+        <input type="text" placeholder="Nom du joueur" id="nomJoueur">
+        <input type="button" value="Rechercher" onclick="statistiqueJoueur()">
       </div>
       <footer id="listeNotes" class="">
         <p id="up">▲</p>
@@ -58,4 +58,12 @@
       </footer>
     </div>
   </body>
+  <script>
+    function statistiqueJoueur() {
+      let input = document.getElementById("nomJoueur")
+      if (input.value !== "") {
+        alert("Le joueur " + input.value + " a joué X parties et perdu X parties");
+      }
+    }
+  </script>
 </html>

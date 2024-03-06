@@ -7,7 +7,7 @@ import maison from '../images/maison.png'
 import hotel from '../images/hotel.png'
 import '../styles/Case.css'
 
-const mysql = require('mysql');
+/*const mysql = require('mysql');
 
 // Connexion à la base de données
 const connection = mysql.createConnection({
@@ -15,7 +15,7 @@ const connection = mysql.createConnection({
   user: 'root',
   password: 'root',
   database: 'STATISTIQUE'
-});
+});*/
 
 export class MainFonction {
     constructor() {
@@ -1046,7 +1046,7 @@ export class MainFonction {
         }
     }
 
-    mettreAJourNombreParties(nomUtilisateur) {
+    /*mettreAJourNombreParties(nomUtilisateur) {
         connection.query('SELECT * FROM joueurs WHERE nomUtilisateur = ?', [nomUtilisateur], (error, results) => {
             if (error) {
             throw error;
@@ -1097,7 +1097,7 @@ export class MainFonction {
             console.log(`Aucun enregistrement trouvé pour ${nomUtilisateur}`);
             }
         });
-    }
+    }*/
 
 /*while (!gagnant) {
 
