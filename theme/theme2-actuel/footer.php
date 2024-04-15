@@ -41,6 +41,7 @@
 	</div>
 </footer>
 </div>
+<?php wp_tag_cloud( $args ); ?>
 <?php wp_footer(); ?>
 </body>
 </html>

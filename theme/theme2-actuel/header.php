@@ -8,19 +8,20 @@
  *
  * @package elegantwriting
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="alternate" type="application/rss+xml" title="Feed" href="http://theolaidin.pro/feed/" />
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-
+<a href="https://theolaidin.pro/rss">
+	<img srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/1200px-Feed-icon.svg.png" style="height: 20px;width: 20px;position: absolute; top:5px; right: 5px;">
+</a>
 <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'elegantwriting' ); ?></a>
 
 
